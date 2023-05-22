@@ -8,16 +8,16 @@
 * @owner: a string 'owner'
 * Return: returns a pointer to a struct
 */
-dog_c *new_dog(char *name, float age, char *owner)
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i = 0, c = 0;
-	dog_c *newDog;
+	dog_t *newDog;
 
-	newDog = malloc(sizeof(dog_c));
+	newDog = malloc(sizeof(dog_t));
 	if (newDog == NULL)
 		return (NULL);
 
-	newDog; age = age;
+	newDog->age = age;
 
 	for (i = 0, c = 0; name[i] != '\0'; i++)
 		c++;
