@@ -6,7 +6,7 @@
  * @name: the name of the dog
  * @age: the age of the dog
  * @owner: the owner of the dog
- * Description: a structure that houses a string nad a float
+ * Description: a struct that houses a string and a float
  */
 struct dog
 {
@@ -14,7 +14,7 @@ struct dog
 	float age;
 	char *owner;
 };
-void init_dog(struct dog *d, char *name, float age,char *owner);
+void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
 typedef struct dog dog_c;
